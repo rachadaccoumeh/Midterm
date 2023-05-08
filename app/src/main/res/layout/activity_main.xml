@@ -4,84 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/editTextNb1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:minWidth="60dp" />
-
-        <EditText
-            android:id="@+id/editTextNb2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:minWidth="60dp" />
-
-        <Button
-            android:id="@+id/buttonAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+" />
-    </LinearLayout>
+        android:layout_height="50dp"
+        android:background="#da7635"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <EditText
             android:id="@+id/editTextPhoneNumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
+            android:background="#e24e1b"
             android:hint="Enter your phone number"
-            android:inputType="phone" />
+            android:inputType="phone"
+            android:padding="10dp" />
 
         <Button
             android:id="@+id/buttonCall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#da7635"
             android:text="call" />
     </LinearLayout>
 
+    <EditText
+        android:id="@+id/editTextURL"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#e24e1b"
+        android:hint="Enter URL"
+        android:inputType="textUri"
+        android:padding="10dp" />
+
     <Button
-        android:id="@+id/buttonOpenGoogle"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonOpenURL"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="open google" />
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#da7635"
+        android:text="Go to the URL" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#da7635"
+        android:text="Calculator" />
 
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Enter your email"
-            android:inputType="textEmailAddress" />
-
-        <Button
-            android:id="@+id/buttonSendEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="send email" />
-    </LinearLayout>
 
 </LinearLayout>
